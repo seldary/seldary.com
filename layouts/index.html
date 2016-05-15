@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+<body>
+  <section class="center">
+    <section>
+      <span>
+        Things published by <a href="https://twitter.com/seldary">@seldary</a>:
+      </span> 
+      {{ range first 10 .Data.Pages }}
+        <div>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      {{ end }}        
+    </section>
+  </section>
+</body>
+</html>

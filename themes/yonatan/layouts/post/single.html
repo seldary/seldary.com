@@ -1,6 +1,11 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+<body>
 <article>
     <h1>{{ .Title }}</h1> {{ .Content }}
     <h5>Published on {{ .Date.Format "Mon, Jan 2, 2006" }}</h5>
 </article>
 {{ partial "footer.html" . }}
+</body>
+</html>

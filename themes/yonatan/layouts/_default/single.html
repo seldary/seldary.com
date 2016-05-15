@@ -1,5 +1,10 @@
-{{ partial "header.html" . }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  <p><a href="{{ .Site.BaseURL }}">Home</a></p>
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+<body>
+<article>
+    <h1>{{ .Title }}</h1> {{ .Content }}
+</article>
 {{ partial "footer.html" . }}
+</body>
+</html>
