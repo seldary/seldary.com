@@ -1,0 +1,13 @@
+body {
+    width: 90%;
+    max-width: 780px;
+    margin: auto;
+    font-family: Georgia,Times,Times New Roman,serif; 
+    line-height: 1.5;
+    font-size: 19px;
+    color: #585858;
+}
+
+.center{
+    text-align: center;
+}
