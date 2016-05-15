@@ -5,12 +5,14 @@
   <section class="center">
     <section>
       <span>
-        Things published by <a href="https://twitter.com/seldary">@seldary</a>:
+        Things published by <a href="/about">seldary</a>:
       </span> 
       {{ range first 10 .Data.Pages }}
-        <div>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </div>
+        {{ if eq .Type "post"}}
+          <div>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </div>
+        {{ end }}
       {{ end }}        
     </section>
   </section>
